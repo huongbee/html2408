@@ -1,0 +1,16 @@
+body{
+    margin: 0
+}
+
+.header{
+    background-color: #FDD530;
+    height: 55px;
+    width: 100%
+}
+.menu{
+    width: 1200px;
+    margin: auto
+}
+.left , .right, .item, .simso, .diennuoc{
+    float: left;
+}
