@@ -11,6 +11,15 @@ body{
     width: 1200px;
     margin: auto
 }
-.left , .right, .item, .simso, .diennuoc{
+.left , .right, .item, .simso, .diennuoc, .search-form,.logo{
     float: left;
+}
+.logo{
+    background-image: url("../images/icondesktop@2x.png");
+    height: 40px;
+    width: 120px;
+}
+.left{
+    background-color: black;
+    height: 55px;
 }
