@@ -8,12 +8,21 @@
 </head>
 <body>
     
-    <button id="btnClick">Click me</button>
+    <button id="btnClick" onclick="clickMe()">Click me</button>
     <div id="my-div"></div>
 
 
 </body>
 <script>
+
+    var x = true;
+    function clickMe(){
+        var obj =  document.getElementById('my-div')
+        x == true ? obj.innerHTML = "<h2>Hello JS</h2>" : obj.innerHTML = "";
+        x = !x
+    }
+
+
     // document.getElementById('my-div').innerHTML = "<h2>Hello JS</h2>"
     // document.getElementById('my-div').innerText = "<h2>Hello JS</h2>"
     /*
