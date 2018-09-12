@@ -25,9 +25,30 @@
     <button id="btnTinh" onclick="calculator()">Tinh</button>
     <input type="text" placeholder="Ket qua" id="txtKetqua" readonly>
 
-
 </body>
 <script>
+
+    var arr = [1,2,4,5];
+    
+    for(var i=0; i < arr.length; i++){
+        console.log(arr[i])
+    }
+
+    var arr = [
+        key => "value",
+        key2 => "value2"
+    ];
+    arr.forEach((value,index) => {
+        console.log(value)
+    });
+
+    arr.forEach(function(value,index){
+        // console.log(Object.keys(arr)); 
+        console.log(value)
+    });
+
+
+
     function calculator(){
         var txtSoa = document.getElementById('txtSoa')
         var txtSob = document.getElementById('txtSob')

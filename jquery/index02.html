@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    display: block
+}
+</style>
+<body>
+    <div>
+        BOX
+    </div>
+    <button>Click me</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('button').click(function(){
+            // $('.box').hide(500) //0.5s
+            // $('.box').show(500) //0.5s
+            // $('.box').toggle(500) //0.5s
+            // $('.box').slideDown(500) //0.5s
+            
+            // $('.box').css("backgroundColor",'aquamarine')
+            // $('.box').css({
+            //     "backgroundColor":'aquamarine',
+            //     "textAlign":"center"
+            // })
+
+            $('div').addClass('box')
+            $('div').append('312323')
+            $('div').prepend('312323')
+
+            var  text = $('div').html() //get
+            $('div').html(21313131)
+            
+
+
+            
+        })
+    })
+</script>
+</html>
