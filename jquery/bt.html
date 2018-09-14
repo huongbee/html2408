@@ -28,6 +28,12 @@
         textAlign:"center"
     })
     var tmp = true;
+    $('.oco').hover(function(){
+        $(this).css("backgroundColor","#d9f6f7")
+    })
+    $('.oco').mouseout(function(){
+        $(this).css("backgroundColor","#bdcfed")
+    })
     $('.oco').click(function(){
         if($(this).html()==''){ // get
             if(tmp) $(this).html("X") //set
