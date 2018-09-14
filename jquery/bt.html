@@ -6,28 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<style>
-.banco{
-    width: 440px;
-    margin: auto
-}
-.oco{
-    width: 20px;
-    height: 20px;
-    float: left;
-    border: 1px solid #4286f4;
-    background-color: #bdcfed
-}
-</style>
 <body>
     <div class="banco">
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
-        <div class="oco"></div>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+    for(var i =1; i<=400; i++){
+        $('.banco').append('<div class="oco"></div>')
+    }
+    $('.banco').css({
+        width: "440px",
+        margin: "auto"
+    })
+    $('.oco').css("backgroundColor","#bdcfed")
+    $('.oco').css({
+        width: "20px",
+        height: "20px",
+        float: "left",
+        border: "1px solid #4286f4",
+        textAlign:"center"
+    })
+    var tmp = true;
+    $('.oco').click(function(){
+        if($(this).html()==''){ // get
+            if(tmp) $(this).html("X") //set
+            else $(this).html("O")
+            tmp = !tmp
+        }
+        else alert('Can not check this!')
+    })
+</script>
 </html>
